@@ -9,3 +9,9 @@ resource "github_team_membership" "chef-compliance-maintainer" {
     username = "mengesb"
     role = "maintainer"
 }
+
+resource "github_team_repository" "chef-compliance_repo" {
+  team_id    = "${github_team.chef-compliance.id}"
+  repository = "chef-compliance"
+  permission = "admin"
+}
