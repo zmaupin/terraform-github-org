@@ -1,16 +1,4 @@
-/*resource "github_team" "Chef_de_partie" {
-  name        = "Chef de partie"
-  description = "Chef de partie"
-  privacy     = "secret"
-}*/
-/*
-resource "github_team" "cheese" {
-  name = "cheese"
-  description = "cheese"
-  privacy = "closed"
-}*/
-
-resource "github_team" "board" {
+/*resource "github_team" "board" {
   name = "Board"
   description = "Board members"
   privacy = "closed"
@@ -32,4 +20,4 @@ resource "github_team_membership" "josephholsten" {
     team_id = "${github_team.board.id}"
     username = "josephholsten"
     role = "member"
-}
+}*/
