@@ -17,7 +17,7 @@ resource "github_team_membership" "dhcp-maintainer-2" {
 }
 
 resource "github_team_repository" "dhcp_repo" {
-  team_id    = "${github_team.dhcp.id}"
+  team_id    = "${github_team.dhcp_team.id}"
   repository = "dhcp"
   permission = "admin"
 }
