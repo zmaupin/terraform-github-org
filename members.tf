@@ -112,3 +112,9 @@ resource "github_membership" "Xabier_de_Zuazo" {
   username = "zuazo"
   role     = "member"
 }
+
+
+resource "github_membership" "flaccid" {
+    username = "flaccid"
+    role      = "member"
+}
