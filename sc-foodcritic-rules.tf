@@ -5,7 +5,7 @@ resource "github_team_repository" "sc-foodcritic-rules" {
 }
 
 resource "github_team_repository" "sc-foodcritic-rules-sous" {
-  team_id = "${github_team.Chef_de_partie.id}"
+  team_id    = "${github_team.Chef_de_partie.id}"
   repository = "sc-foodcritic-rules"
   permission = "push"
 }

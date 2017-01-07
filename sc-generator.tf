@@ -5,7 +5,7 @@ resource "github_team_repository" "sc-generator" {
 }
 
 resource "github_team_repository" "sc-generator-sous" {
-  team_id = "${github_team.Chef_de_partie.id}"
+  team_id    = "${github_team.Chef_de_partie.id}"
   repository = "sc-generator"
   permission = "push"
 }
