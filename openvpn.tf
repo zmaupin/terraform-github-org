@@ -1,6 +1,6 @@
 resource "github_team" "openvpn_team" {
   name        = "openvpn"
-  description = "DHCP Cookbook Maintainers"
+  description = "OpenVPN Cookbook Maintainers"
   privacy     = "closed"
 }
 
