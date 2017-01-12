@@ -5,9 +5,9 @@ resource "github_team" "chef-compliance" {
 }
 
 resource "github_team_membership" "chef-compliance-maintainer" {
-    team_id = "${github_team.chef-compliance.id}"
-    username = "mengesb"
-    role = "maintainer"
+  team_id  = "${github_team.chef-compliance.id}"
+  username = "mengesb"
+  role     = "maintainer"
 }
 
 resource "github_team_repository" "chef-compliance_repo" {

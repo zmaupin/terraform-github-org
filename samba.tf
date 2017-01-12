@@ -5,9 +5,9 @@ resource "github_team" "samba" {
 }
 
 resource "github_team_membership" "samba-maintainer" {
-    team_id = "${github_team.samba.id}"
-    username = "damacus"
-    role = "member"
+  team_id  = "${github_team.samba.id}"
+  username = "damacus"
+  role     = "member"
 }
 
 resource "github_team_repository" "samba_repo" {
