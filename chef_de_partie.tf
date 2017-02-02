@@ -23,9 +23,9 @@ resource "github_team_membership" "coderanger" {
   role     = "member"
 }
 
-resource "github_team_membership" "djmbm" {
+resource "github_team_membership" "Dylan-M" {
   team_id  = "${github_team.Chef_de_partie.id}"
-  username = "djmbm"
+  username = "Dylan-M"
   role     = "member"
 }
 
@@ -206,7 +206,7 @@ resource "github_team_membership" "rex" {
 
 resource "github_team_membership" "someara" {
   team_id  = "${github_team.Chef_de_partie.id}"
-  username = "luishdez"
+  username = "somera"
   role     = "member"
 }
 
