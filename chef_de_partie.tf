@@ -206,7 +206,7 @@ resource "github_team_membership" "rex" {
 
 resource "github_team_membership" "someara" {
   team_id  = "${github_team.Chef_de_partie.id}"
-  username = "luishdez"
+  username = "somera"
   role     = "member"
 }
 
