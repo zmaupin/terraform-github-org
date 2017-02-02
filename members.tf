@@ -19,7 +19,7 @@ resource "github_membership" "Noah_Kantrowitz" {
 }
 
 resource "github_membership" "Dylan_Myers" {
-  username = "djmbm"
+  username = "Dylan-M"
   role     = "member"
 }
 
