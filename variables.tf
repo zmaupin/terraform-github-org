@@ -1,7 +1,5 @@
-variable "github_token" {
-  default = ""
-}
+variable "github_token" {}
 
 variable "github_organization" {
-  default = ""
+  default = "sous-chefs"
 }
