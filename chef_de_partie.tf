@@ -222,6 +222,12 @@ resource "github_team_membership" "tas50" {
   role     = "maintainer"
 }
 
+resource "github_team_membership" "rshade" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "rshade"
+  role     = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
