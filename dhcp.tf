@@ -7,7 +7,7 @@ resource "github_team" "dhcp_team" {
 resource "github_team_membership" "dhcp-maintainer-1" {
   team_id  = "${github_team.dhcp_team.id}"
   username = "jmccann"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "dhcp-maintainer-2" {

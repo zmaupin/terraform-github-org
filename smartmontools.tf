@@ -7,7 +7,7 @@ resource "github_team" "smartmontools_team" {
 resource "github_team_membership" "smartmontools-maintainer-1" {
   team_id  = "${github_team.smartmontools_team.id}"
   username = "tas50"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_repository" "smartmontools_repo" {

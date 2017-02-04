@@ -7,7 +7,7 @@ resource "github_team" "snort_team" {
 resource "github_team_membership" "snort-maintainer-1" {
   team_id  = "${github_team.snort_team.id}"
   username = "tas50"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "snort-maintainer-2" {

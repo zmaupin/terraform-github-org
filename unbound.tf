@@ -13,7 +13,7 @@ resource "github_team_membership" "unbound-maintainer-1" {
 resource "github_team_membership" "unbound-maintainer-2" {
   team_id  = "${github_team.unbound_team.id}"
   username = "dblessing"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_repository" "unbound_repo" {

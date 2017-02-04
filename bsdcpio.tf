@@ -7,7 +7,7 @@ resource "github_team" "bsdcpio_team" {
 resource "github_team_membership" "bsdcpio-maintainer-1" {
   team_id  = "${github_team.bsdcpio_team.id}"
   username = "josephholsten"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_repository" "bsdcpio_repo" {
