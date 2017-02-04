@@ -7,7 +7,7 @@ resource "github_team" "mongodb_team" {
 resource "github_team_membership" "mongodb-maintainer-1" {
   team_id  = "${github_team.mongodb_team.id}"
   username = "damacus"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "mongodb-maintainer-2" {

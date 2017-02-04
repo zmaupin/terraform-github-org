@@ -13,7 +13,7 @@ resource "github_team_repository" "ossec_repo" {
 resource "github_team_membership" "ossec-maintainer-1" {
   team_id  = "${github_team.ossec_team.id}"
   username = "tas50"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "ossec-maintainer-2" {

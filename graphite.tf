@@ -7,7 +7,7 @@ resource "github_team" "graphite_team" {
 resource "github_team_membership" "graphite-maintainer-1" {
   team_id  = "${github_team.graphite_team.id}"
   username = "tas50"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_repository" "graphite_repo" {

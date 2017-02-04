@@ -171,37 +171,37 @@ resource "github_team_membership" "svanzoest" {
 resource "github_team_membership" "damacus" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "damacus"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "dblessing" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "dblessing"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "jmccann" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "jmccann"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "josephholsten" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "josephholsten"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "luishdez" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "luishdez"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "rex" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "rex"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "someara" {
@@ -213,13 +213,13 @@ resource "github_team_membership" "someara" {
 resource "github_team_membership" "spheromak" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "spheromak"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "tas50" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "tas50"
-  role     = "member"
+  role     = "maintainer"
 }
 
 # Repositories
