@@ -234,6 +234,12 @@ resource "github_team_membership" "rshade" {
   role     = "member"
 }
 
+resource "github_team_membership" "CloCkWeRX" {
+  team_id = "${github_team.Chef_de_partie.id}"
+  username = "CloCkWeRX"
+  role = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
