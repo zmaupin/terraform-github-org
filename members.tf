@@ -139,6 +139,6 @@ resource "github_membership" "rshade" {
 }
 
 resource "github_membership" "CloCkWeRX" {
-  user_name = "CloCkWeRX"
+  username = "CloCkWeRX"
   role = "member"
 }
