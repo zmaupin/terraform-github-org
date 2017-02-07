@@ -13,7 +13,7 @@ resource "github_team_membership" "ruby_build-maintainer-1" {
 resource "github_team_membership" "ruby_build-maintainer-2" {
   team_id  = "${github_team.bsdcpio_team.id}"
   username = "tas50"
-  role     = "maintainer"
+  role     = "member"
 }
 
 resource "github_team_repository" "ruby_build_repo" {
