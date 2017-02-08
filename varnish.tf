@@ -22,6 +22,12 @@ resource "github_team_membership" "varnish-maintainer-3" {
   role     = "member"
 }
 
+resource "github_team_membership" "varnish-maintainer-3" {
+  team_id  = "${github_team.varnish_team.id}"
+  username = "martinb3"
+  role     = "member"
+}
+
 resource "github_team_repository" "varnish_repo" {
   team_id    = "${github_team.varnish_team.id}"
   repository = "varnish"
