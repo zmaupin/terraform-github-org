@@ -240,6 +240,12 @@ resource "github_team_membership" "CloCkWeRX" {
   role = "member"
 }
 
+resource "github_team_membership" "RyanJarv" {
+  team_id = "${github_team.Chef_de_partie.id}"
+  username = "RyanJarv"
+  role = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
@@ -318,5 +324,11 @@ resource "github_team_repository" "ruby_rbenv" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "ruby_rbenv"
   permission = "pull"
-
 }
+
+resource "github_team_repository" "varnish" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "varnish"
+  permission = "pull"
+}
+
