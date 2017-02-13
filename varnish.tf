@@ -6,7 +6,7 @@ resource "github_team" "varnish_team" {
 
 resource "github_team_membership" "varnish-maintainer-1" {
   team_id  = "${github_team.varnish_team.id}"
-  username = "damacus"
+  username = "martinb3"
   role     = "maintainer"
 }
 
@@ -19,12 +19,6 @@ resource "github_team_membership" "varnish-maintainer-2" {
 resource "github_team_membership" "varnish-maintainer-3" {
   team_id  = "${github_team.varnish_team.id}"
   username = "RyanJarv"
-  role     = "member"
-}
-
-resource "github_team_membership" "varnish-maintainer-3" {
-  team_id  = "${github_team.varnish_team.id}"
-  username = "martinb3"
   role     = "member"
 }
 
