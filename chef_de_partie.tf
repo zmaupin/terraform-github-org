@@ -314,8 +314,21 @@ resource "github_team_repository" "unbound" {
   permission = "pull"
 }
 
+resource "github_team_repository" "ruby_build" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "ruby_build"
+  permission = "pull"
+}
+
+resource "github_team_repository" "ruby_rbenv" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "ruby_rbenv"
+  permission = "pull"
+}
+
 resource "github_team_repository" "varnish" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "varnish"
   permission = "pull"
 }
+
