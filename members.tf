@@ -140,10 +140,10 @@ resource "github_membership" "rshade" {
 
 resource "github_membership" "CloCkWeRX" {
   username = "CloCkWeRX"
-  role = "member"
+  role     = "member"
 }
 
 resource "github_membership" "RyanJarv" {
   username = "RyanJarv"
-  role = "member"
+  role     = "member"
 }
