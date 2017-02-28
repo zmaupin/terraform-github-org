@@ -131,12 +131,6 @@ resource "github_team_membership" "thommay" {
   role     = "member"
 }
 
-resource "github_team_membership" "zarry" {
-  team_id  = "${github_team.Chef_de_partie.id}"
-  username = "zarry"
-  role     = "member"
-}
-
 resource "github_team_membership" "bkconrad" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "bkconrad"
@@ -331,4 +325,3 @@ resource "github_team_repository" "varnish" {
   repository = "varnish"
   permission = "pull"
 }
-
