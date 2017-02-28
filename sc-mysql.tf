@@ -4,6 +4,11 @@ resource "github_team" "sc-mysql_team" {
   privacy     = "closed"
 }
 
+resource "github_repository" "sc-mysql" {
+  name        = "sc-mysql"
+  description = "Sous Chefs MySQL Cookbook"
+}
+
 resource "github_team_repository" "sc-mysql_repo" {
   team_id    = "${github_team.sc-mysql_team.id}"
   repository = "sc-mysql"
@@ -19,5 +24,5 @@ resource "github_team_membership" "sc-mysql-maintainer-1" {
 resource "github_team_membership" "sc-mysql-maintainer-2" {
   team_id  = "${github_team.sc-mysql_team.id}"
   username = "damacus"
-  role     = "member"
+  role     = "maintainer"
 }
