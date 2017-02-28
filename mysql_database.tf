@@ -1,12 +1,12 @@
+resource "github_repository" "mysql_database" {
+  name        = "mysql_database"
+  description = "Sous Chefs MySQL Cookbook"
+}
+
 resource "github_team" "mysql_database_team" {
   name        = "mysql_database"
   description = "mysql_database Cookbook Maintainers"
   privacy     = "closed"
-}
-
-resource "github_repository" "mysql_database" {
-  name        = "mysql_database"
-  description = "Sous Chefs MySQL Cookbook"
 }
 
 resource "github_team_repository" "mysql_database_repo" {
