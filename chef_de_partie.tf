@@ -240,6 +240,12 @@ resource "github_team_membership" "RyanJarv" {
   role     = "member"
 }
 
+resource "github_team_membership" "iennae" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "iennae"
+  role     = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
@@ -329,5 +335,11 @@ resource "github_team_repository" "varnish" {
 resource "github_team_repository" "swap" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "swap"
+  permission = "pull"
+}
+
+resource "github_team_repository" "sc-mysql" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "sc-mysql"
   permission = "pull"
 }
