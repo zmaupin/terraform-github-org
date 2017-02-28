@@ -26,3 +26,9 @@ resource "github_team_membership" "sc-mysql-maintainer-2" {
   username = "damacus"
   role     = "maintainer"
 }
+
+resource "github_team_membership" "sc-mysql-maintainer-3" {
+  team_id  = "${github_team.sc-mysql_team.id}"
+  username = "iennae"
+  role     = "maintainer"
+}
