@@ -229,15 +229,15 @@ resource "github_team_membership" "rshade" {
 }
 
 resource "github_team_membership" "CloCkWeRX" {
-  team_id = "${github_team.Chef_de_partie.id}"
+  team_id  = "${github_team.Chef_de_partie.id}"
   username = "CloCkWeRX"
-  role = "member"
+  role     = "member"
 }
 
 resource "github_team_membership" "RyanJarv" {
-  team_id = "${github_team.Chef_de_partie.id}"
+  team_id  = "${github_team.Chef_de_partie.id}"
   username = "RyanJarv"
-  role = "member"
+  role     = "member"
 }
 
 # Repositories
@@ -323,5 +323,11 @@ resource "github_team_repository" "ruby_rbenv" {
 resource "github_team_repository" "varnish" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "varnish"
+  permission = "pull"
+}
+
+resource "github_team_repository" "swap" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "swap"
   permission = "pull"
 }
