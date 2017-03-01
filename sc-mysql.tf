@@ -24,7 +24,7 @@ resource "github_team_membership" "sc-mysql-maintainer-1" {
 resource "github_team_membership" "sc-mysql-maintainer-2" {
   team_id  = "${github_team.sc-mysql_team.id}"
   username = "damacus"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "sc-mysql-maintainer-3" {
