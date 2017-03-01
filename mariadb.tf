@@ -1,6 +1,8 @@
 resource "github_repository" "mariadb" {
   name        = "mariadb"
   description = "Sous Chefs MariaDB Cookbook"
+  has_issues  = "true"
+  has_wiki    = "true"
 }
 
 resource "github_team_repository" "mariadb_repo" {
