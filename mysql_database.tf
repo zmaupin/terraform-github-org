@@ -1,6 +1,8 @@
 resource "github_repository" "mysql_database" {
   name        = "mysql_database"
   description = "Sous Chefs MySQL Cookbook"
+  has_issues  = "true"
+  has_wiki    = "true"
 }
 
 resource "github_team" "mysql_database_team" {

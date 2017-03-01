@@ -1,6 +1,8 @@
 resource "github_repository" "sc-mysql" {
   name        = "sc-mysql"
   description = "Sous Chefs MySQL Cookbook"
+  has_issues  = "true"
+  has_wiki    = "true"
 }
 
 resource "github_team_repository" "sc-mysql_repo" {
