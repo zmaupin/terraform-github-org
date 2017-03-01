@@ -246,6 +246,12 @@ resource "github_team_membership" "iennae" {
   role     = "member"
 }
 
+resource "github_team_membership" "shoekstra" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "shoekstra"
+  role     = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
@@ -341,5 +347,17 @@ resource "github_team_repository" "swap" {
 resource "github_team_repository" "sc-mysql" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "sc-mysql"
+  permission = "pull"
+}
+
+resource "github_team_repository" "mariadb" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "mariadb"
+  permission = "pull"
+}
+
+resource "github_team_repository" "mysql_database" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "mysql_database"
   permission = "pull"
 }

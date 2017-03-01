@@ -1,20 +1,13 @@
-resource "github_repository" "mariadb" {
+resource "github_team" "mariadb_team" {
   name        = "mariadb"
-  description = "Sous Chefs MariaDB Cookbook"
-  has_issues  = "true"
-  has_wiki    = "true"
+  description = "mariadb Cookbook Maintainers"
+  privacy     = "closed"
 }
 
 resource "github_team_repository" "mariadb_repo" {
   team_id    = "${github_team.mariadb_team.id}"
   repository = "mariadb"
   permission = "admin"
-}
-
-resource "github_team" "mariadb_team" {
-  name        = "mariadb"
-  description = "mariadb Cookbook Maintainers"
-  privacy     = "closed"
 }
 
 resource "github_team_membership" "mariadb-maintainer-1" {
