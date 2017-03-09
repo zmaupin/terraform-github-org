@@ -11,6 +11,12 @@ resource "github_team_membership" "atomic-penguin" {
   role     = "member"
 }
 
+resource "github_team_membership" "atrull" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "atrull"
+  role     = "member"
+}
+
 resource "github_team_membership" "axelrtgs" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "axelrtgs"
