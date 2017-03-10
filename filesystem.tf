@@ -1,6 +1,6 @@
 resource "github_team" "filesystem" {
   name        = "filesystem"
-  description = "Ruby Build Cookbook Maintainers"
+  description = "Filesystem Cookbook Maintainers"
   privacy     = "closed"
 }
 
