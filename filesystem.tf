@@ -10,12 +10,6 @@ resource "github_team_membership" "filesystem-maintainer-1" {
   role     = "maintainer"
 }
 
-resource "github_team_membership" "filesystem-maintainer-2" {
-  team_id  = "${github_team.filesystem.id}"
-  username = "tas50"
-  role     = "maintainer"
-}
-
 resource "github_team_repository" "filesystem_repo" {
   team_id    = "${github_team.filesystem.id}"
   repository = "filesystem"
