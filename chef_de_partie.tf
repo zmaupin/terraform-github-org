@@ -258,6 +258,12 @@ resource "github_team_membership" "shoekstra" {
   role     = "member"
 }
 
+resource "github_team_membership" "teknofire" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "teknofire"
+  role     = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
