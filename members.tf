@@ -123,11 +123,6 @@ resource "github_membership" "flaccid" {
   role     = "member"
 }
 
-resource "github_membership" "ranjib" {
-  username = "ranjib"
-  role     = "member"
-}
-
 resource "github_membership" "evan2645" {
   username = "evan2645"
   role     = "member"
