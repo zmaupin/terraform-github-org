@@ -155,11 +155,6 @@ resource "github_team_membership" "flaccid" {
   role     = "member"
 }
 
-resource "github_team_membership" "ranjib" {
-  team_id  = "${github_team.Chef_de_partie.id}"
-  username = "ranjib"
-  role     = "member"
-}
 
 resource "github_team_membership" "evan2645" {
   team_id  = "${github_team.Chef_de_partie.id}"
@@ -177,12 +172,6 @@ resource "github_team_membership" "svanzoest" {
 resource "github_team_membership" "damacus" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "damacus"
-  role     = "maintainer"
-}
-
-resource "github_team_membership" "dblessing" {
-  team_id  = "${github_team.Chef_de_partie.id}"
-  username = "dblessing"
   role     = "maintainer"
 }
 
@@ -210,12 +199,6 @@ resource "github_team_membership" "rex" {
   role     = "maintainer"
 }
 
-resource "github_team_membership" "someara" {
-  team_id  = "${github_team.Chef_de_partie.id}"
-  username = "somera"
-  role     = "member"
-}
-
 resource "github_team_membership" "spheromak" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "spheromak"
@@ -231,12 +214,6 @@ resource "github_team_membership" "tas50" {
 resource "github_team_membership" "rshade" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "rshade"
-  role     = "member"
-}
-
-resource "github_team_membership" "CloCkWeRX" {
-  team_id  = "${github_team.Chef_de_partie.id}"
-  username = "CloCkWeRX"
   role     = "member"
 }
 

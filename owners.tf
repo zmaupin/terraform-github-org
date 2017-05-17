@@ -28,11 +28,6 @@ resource "github_membership" "Pierce_Moore" {
   role     = "admin"
 }
 
-resource "github_membership" "Sean_OMeara" {
-  username = "somera"
-  role     = "admin"
-}
-
 resource "github_membership" "Jesse_Nelson" {
   username = "spheromak"
   role     = "admin"

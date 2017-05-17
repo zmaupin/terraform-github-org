@@ -22,12 +22,6 @@ resource "github_team_membership" "ossec-maintainer-2" {
   role     = "member"
 }
 
-resource "github_team_membership" "ossec-maintainer-3" {
-  team_id  = "${github_team.ossec_team.id}"
-  username = "ranjib"
-  role     = "member"
-}
-
 resource "github_team_membership" "ossec-maintainer-4" {
   team_id  = "${github_team.ossec_team.id}"
   username = "evan2645"
