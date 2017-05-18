@@ -3,9 +3,3 @@ resource "github_team_repository" "website" {
   repository = "website"
   permission = "admin"
 }
-
-resource "github_team_repository" "website-sous-access" {
-  team_id    = "${github_team.Chef_de_partie.id}"
-  repository = "website"
-  permission = "push"
-}
