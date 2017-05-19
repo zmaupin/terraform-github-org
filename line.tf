@@ -7,13 +7,13 @@ resource "github_team" "line_team" {
 resource "github_team_membership" "line-maintainer-1" {
   team_id  = "${github_team.line_team.id}"
   username = "damacus"
-  role     = "maintainer"
+  role     = "member"
 }
 
 resource "github_team_membership" "line-maintainer-2" {
   team_id  = "${github_team.line_team.id}"
   username = "someara"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_repository" "line_repo" {
