@@ -143,6 +143,12 @@ resource "github_team_membership" "bkconrad" {
   role     = "member"
 }
 
+resource "github_team_membership" "someara" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "someara"
+  role     = "member"
+}
+
 resource "github_team_membership" "zuazo" {
   team_id  = "${github_team.Chef_de_partie.id}"
   username = "zuazo"
@@ -154,7 +160,6 @@ resource "github_team_membership" "flaccid" {
   username = "flaccid"
   role     = "member"
 }
-
 
 resource "github_team_membership" "evan2645" {
   team_id  = "${github_team.Chef_de_partie.id}"
@@ -354,5 +359,11 @@ resource "github_team_repository" "mariadb" {
 resource "github_team_repository" "mysql_database" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "mysql_database"
+  permission = "pull"
+}
+
+resource "github_team_repository" "line" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "line-cookbook"
   permission = "pull"
 }
