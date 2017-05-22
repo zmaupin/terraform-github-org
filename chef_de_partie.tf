@@ -252,6 +252,12 @@ resource "github_team_membership" "Raboo" {
   role     = "member"
 }
 
+resource "github_team_membership" "kameghamegha" {
+  team_id  = "${github_team.Chef_de_partie.id}"
+  username = "kameghamegha"
+  role     = "member"
+}
+
 # Repositories
 
 resource "github_team_repository" "bsdcpio" {
@@ -365,5 +371,11 @@ resource "github_team_repository" "mysql_database" {
 resource "github_team_repository" "line" {
   team_id    = "${github_team.Chef_de_partie.id}"
   repository = "line-cookbook"
+  permission = "pull"
+}
+
+resource "github_team_repository" "mac_os_x" {
+  team_id    = "${github_team.Chef_de_partie.id}"
+  repository = "mac_os_x"
   permission = "pull"
 }
