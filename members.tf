@@ -218,3 +218,8 @@ resource "github_membership" "MarkGibbons" {
   username = "MarkGibbons"
   role     = "member"
 }
+
+resource "github_membership" "gsreynolds" {
+  username = "gsreynolds"
+  role     = "member"
+}
