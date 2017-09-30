@@ -1,13 +1,15 @@
+module "nagios" {
+  source         = "modules/repository"
+  name           = "nagios"
+  cookbook_team  = "${github_team.nagios_team.id}"
+  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  has_wiki       = true
+}
+
 resource "github_team" "nagios_team" {
   name        = "nagios"
   description = "Nagios Cookbook Maintainers"
   privacy     = "closed"
-}
-
-resource "github_team_repository" "nagios_repo" {
-  team_id    = "${github_team.nagios_team.id}"
-  repository = "nagios"
-  permission = "admin"
 }
 
 resource "github_team_membership" "nagios-maintainer-sbotman" {
