@@ -248,6 +248,11 @@ resource "github_membership" "mateusduboli" {
   role     = "member"
 }
 
+resource "github_membership" "diurnalist" {
+  username = "diurnalist"
+  role     = "member"
+}
+
 resource "github_membership" "kitchen-porter" {
   username = "kitchen-porter"
   role = "member"
