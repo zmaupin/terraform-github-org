@@ -9,6 +9,6 @@ provider "github" {
 
 terraform {
   backend "atlas" {
-    name = "sous-chefs/terraform-github-org"
+    name = "sous-chefs/github-org"
   }
 }
