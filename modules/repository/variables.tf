@@ -30,11 +30,20 @@ variable "require_ci_pass" {
   default = true
 }
 
+variable "status_checks" {
+  type    = "list"
+  default = ["continuous-integration/travis-ci"]
+}
+
 variable "has_wiki" {
   default = false
 }
 
 variable "team_permission" {
+  default = "push"
+}
+
+variable "everyone_permission" {
   default = "push"
 }
 
