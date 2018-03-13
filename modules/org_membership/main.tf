@@ -243,6 +243,11 @@ resource "github_membership" "mateusduboli" {
   role     = "member"
 }
 
+resource "github_membership" "ibata" {
+  username = "ibata"
+  role     = "member"
+}
+
 resource "github_membership" "ronabop" {
   username = "ronabop"
   role     = "member"
@@ -257,3 +262,4 @@ resource "github_membership" "jeffbyrnes" {
   username = "jeffbyrnes"
   role = "member"
 }
+
