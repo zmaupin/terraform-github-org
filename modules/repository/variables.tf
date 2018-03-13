@@ -51,3 +51,12 @@ locals {
   default_homepage_url = "https://supermarket.chef.io/cookbooks/${var.name}"
   homepage_url         = "${var.homepage_url == "" ? local.default_homepage_url : var.homepage_url}"
 }
+
+# Pull Request Reviews
+variable "dismiss_stale_reviews" {
+  default = true
+}
+
+variable "require_code_owner_reviews" {
+  default = false
+}

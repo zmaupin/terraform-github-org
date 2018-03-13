@@ -24,7 +24,8 @@ resource "github_branch_protection" "repository_master" {
   }
 
   required_pull_request_reviews {
-    dismiss_stale_reviews = true
+    dismiss_stale_reviews      = "${var.dismiss_stale_reviews}"
+    require_code_owner_reviews = "${var.require_code_owner_reviews}"
   }
 
   depends_on = ["github_repository.repository"]
