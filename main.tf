@@ -9,7 +9,9 @@ provider "github" {
 }
 
 terraform {
-  backend "atlas" {
-    name = "sous-chefs/github-org"
+  backend "s3" {
+    bucket = "sous-chefs.terraform"
+    key    = "terraform.tfstate"
+    region = "eu-west-1"
   }
 }
