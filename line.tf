@@ -4,6 +4,7 @@ module "line" {
   description    = "Development repository for the line cookbook"
   cookbook_team  = "${github_team.line.id}"
   chef_de_partie = "${github_team.Chef_de_partie.id}"
+  status_checks  = ["continuous-integration/travis-ci", "ci/circleci: build"]
 }
 
 resource "github_team" "line" {
