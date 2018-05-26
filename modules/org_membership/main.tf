@@ -133,11 +133,6 @@ resource "github_membership" "rshade" {
   role     = "member"
 }
 
-resource "github_membership" "CloCkWeRX" {
-  username = "CloCkWeRX"
-  role     = "member"
-}
-
 resource "github_membership" "RyanJarv" {
   username = "RyanJarv"
   role     = "member"
@@ -218,11 +213,6 @@ resource "github_membership" "gsreynolds" {
   role     = "member"
 }
 
-resource "github_membership" "pcross616" {
-  username = "pcross616"
-  role     = "member"
-}
-
 resource "github_membership" "atheiman" {
   username = "atheiman"
   role     = "member"
@@ -243,29 +233,19 @@ resource "github_membership" "mateusduboli" {
   role     = "member"
 }
 
-resource "github_membership" "ibata" {
-  username = "ibata"
-  role     = "member"
-}
-
 resource "github_membership" "ronabop" {
   username = "ronabop"
   role     = "member"
 }
 
-resource "github_membership" "kitchen-porter" {
-  username = "kitchen-porter"
-  role     = "member"
-}
-
 resource "github_membership" "jeffbyrnes" {
   username = "jeffbyrnes"
-  role = "member"
+  role     = "member"
 }
 
 resource "github_membership" "anuriq" {
   username = "anuriq"
-  role = "member"
+  role     = "member"
 }
 
 resource "github_membership" "pschaumburg" {

@@ -1,0 +1,52 @@
+version: 2
+jobs:
+  plan:
+    docker:
+      - image: hashicorp/terraform
+    steps:
+      - checkout
+      - run: |
+          terraform init
+          terraform plan -out sous.plan
+      - persist_to_workspace:
+          root: .
+          paths: .
+  apply:
+    docker:
+      - image: hashicorp/terraform
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: |
+          terraform init
+          terraform apply --auto-approve sous.plan
+
+workflows:
+  version: 2
+  plan_and_apply:
+    jobs:
+      - plan:
+          context: Terraform
+      - hold:
+          type: approval
+          requires:
+            - plan
+          branches:
+              only:
+                - master
+      - apply:
+          requires:
+            - hold
+          context: Terraform
+          branches:
+              only:
+                - master
+  nightly:
+      triggers:
+        - schedule:
+            cron: "0 0 * * *"
+            filters:
+              branches:
+                only:
+                  - master
