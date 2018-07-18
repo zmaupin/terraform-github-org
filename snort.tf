@@ -16,9 +16,3 @@ resource "github_team_membership" "snort-maintainer-1" {
   username = "tas50"
   role     = "maintainer"
 }
-
-resource "github_team_membership" "snort-maintainer-2" {
-  team_id  = "${github_team.snort_team.id}"
-  username = "jtimberman"
-  role     = "member"
-}
