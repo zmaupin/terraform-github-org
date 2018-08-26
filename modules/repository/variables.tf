@@ -70,7 +70,7 @@ variable "archived" {
 }
 
 locals {
-  default_topics = ["chef", "chef-cookbook", "chef-resource", "${var.name}"]
+  default_topics = ["chef", "chef-cookbook", "chef-resource", "${replace(var.name, "_", "-")}"]
   topics         = "${concat(local.default_topics, var.additional_topics)}"
 }
 
