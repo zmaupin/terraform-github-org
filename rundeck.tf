@@ -1,7 +1,7 @@
 module "rundeck" {
   source         = "modules/repository"
   name           = "rundeck"
-  description    = "Development repository for the Rundeck 2.0 cookbook"
+  description    = "Development repository for the Rundeck cookbook"
   cookbook_team  = "${github_team.rundeck.id}"
   chef_de_partie = "${github_team.Chef_de_partie.id}"
 }
