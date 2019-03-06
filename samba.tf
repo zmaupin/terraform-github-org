@@ -1,8 +1,7 @@
 module "samba" {
-  source         = "modules/repository"
-  name           = "samba"
-  cookbook_team  = "${github_team.samba.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "samba"
+  cookbook_team = "${github_team.samba.id}"
 }
 
 resource "github_team" "samba" {

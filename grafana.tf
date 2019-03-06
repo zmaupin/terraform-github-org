@@ -1,8 +1,7 @@
 module "grafana" {
-  source         = "modules/repository"
-  name           = "grafana"
-  cookbook_team  = "${github_team.grafana.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "grafana"
+  cookbook_team = "${github_team.grafana.id}"
 }
 
 resource "github_team" "grafana" {

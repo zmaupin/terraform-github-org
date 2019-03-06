@@ -1,8 +1,7 @@
 module "bsdcpio" {
-  source         = "modules/repository"
-  name           = "bsdcpio"
-  cookbook_team  = "${github_team.bsdcpio.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "bsdcpio"
+  cookbook_team = "${github_team.bsdcpio.id}"
 }
 
 resource "github_team" "bsdcpio" {

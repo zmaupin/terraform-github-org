@@ -16,12 +16,6 @@ resource "github_team_membership" "tas50-board" {
   role     = "maintainer"
 }
 
-resource "github_team_membership" "coderanger-board" {
-  team_id  = "${github_team.board.id}"
-  username = "coderanger"
-  role     = "maintainer"
-}
-
 resource "github_team_membership" "kitchen-porter-board" {
   team_id  = "${github_team.board.id}"
   username = "kitchen-porter"

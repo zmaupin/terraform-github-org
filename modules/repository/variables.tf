@@ -13,10 +13,6 @@ variable "cookbook_team" {
   description = "ID of the team that should own the repo, gives push access"
 }
 
-variable "chef_de_partie" {
-  description = "ID of the team everyone belongs to, gives read-only access"
-}
-
 variable "homepage_url" {
   default     = ""
   description = "Home page URL for the Git repo"
@@ -81,6 +77,7 @@ variable "additional_topics" {
 
 variable "auto_init" {
   default = true
+
   description = <<DESCRIPTION
   This is an option that initializes the repo, it defaults to true. If it is set
   to false then it will not enable branch protection. The only use cases where

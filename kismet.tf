@@ -1,8 +1,7 @@
 module "kismet" {
-  source         = "modules/repository"
-  name           = "kismet"
-  cookbook_team  = "${github_team.kismet.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "kismet"
+  cookbook_team = "${github_team.kismet.id}"
 }
 
 resource "github_team" "kismet" {

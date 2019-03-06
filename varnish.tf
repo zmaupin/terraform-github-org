@@ -1,8 +1,7 @@
 module "varnish" {
-  source         = "modules/repository"
-  name           = "varnish"
-  cookbook_team  = "${github_team.varnish.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "varnish"
+  cookbook_team = "${github_team.varnish.id}"
 }
 
 resource "github_team" "varnish" {

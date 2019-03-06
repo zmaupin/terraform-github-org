@@ -1,8 +1,7 @@
 module "sensors" {
-  source         = "modules/repository"
-  name           = "sensors"
-  cookbook_team  = "${github_team.sensors.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "sensors"
+  cookbook_team = "${github_team.sensors.id}"
 }
 
 resource "github_team" "sensors" {

@@ -1,8 +1,7 @@
 module "nano" {
-  source         = "modules/repository"
-  name           = "nano"
-  cookbook_team  = "${github_team.nano.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "nano"
+  cookbook_team = "${github_team.nano.id}"
 }
 
 resource "github_team" "nano" {

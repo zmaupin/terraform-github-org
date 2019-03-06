@@ -1,8 +1,7 @@
 module "vault" {
-  source         = "modules/repository"
-  name           = "vault"
-  cookbook_team  = "${github_team.vault.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "vault"
+  cookbook_team = "${github_team.vault.id}"
 }
 
 resource "github_team" "vault" {
@@ -13,7 +12,7 @@ resource "github_team" "vault" {
 
 resource "github_team_membership" "vault-maintainer-1" {
   team_id  = "${github_team.vault.id}"
-  username = "johnbellone"
+  username = "damacus"
   role     = "maintainer"
 }
 

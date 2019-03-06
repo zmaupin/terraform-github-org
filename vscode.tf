@@ -1,8 +1,7 @@
 module "vscode" {
-  source         = "modules/repository"
-  name           = "vscode"
-  cookbook_team  = "${github_team.vscode.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "vscode"
+  cookbook_team = "${github_team.vscode.id}"
 }
 
 resource "github_team" "vscode" {

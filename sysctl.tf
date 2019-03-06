@@ -1,8 +1,7 @@
 module "sysctl" {
-  source         = "modules/repository"
-  name           = "sysctl"
-  cookbook_team  = "${github_team.sysctl.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "sysctl"
+  cookbook_team = "${github_team.sysctl.id}"
 }
 
 resource "github_team" "sysctl" {

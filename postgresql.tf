@@ -1,8 +1,7 @@
 module "postgresql" {
-  source         = "modules/repository"
-  name           = "postgresql"
-  cookbook_team  = "${github_team.postgresql.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "postgresql"
+  cookbook_team = "${github_team.postgresql.id}"
 }
 
 resource "github_team" "postgresql" {

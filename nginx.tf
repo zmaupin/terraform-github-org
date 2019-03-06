@@ -1,9 +1,9 @@
 module "nginx" {
-  source         = "modules/repository"
-  name           = "nginx"
-  cookbook_team  = "${github_team.nginx.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
-  status_checks  = ["ci/circleci: delivery"]
+  source        = "modules/repository"
+  name          = "nginx"
+  cookbook_team = "${github_team.nginx.id}"
+
+  status_checks = ["ci/circleci: delivery"]
 }
 
 resource "github_team" "nginx" {

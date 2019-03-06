@@ -1,8 +1,7 @@
 module "unifi" {
-  source         = "modules/repository"
-  name           = "unifi"
-  cookbook_team  = "${github_team.unifi.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "unifi"
+  cookbook_team = "${github_team.unifi.id}"
 }
 
 resource "github_team" "unifi" {

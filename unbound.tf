@@ -1,8 +1,7 @@
 module "unbound" {
-  source         = "modules/repository"
-  name           = "unbound"
-  cookbook_team  = "${github_team.unbound.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "unbound"
+  cookbook_team = "${github_team.unbound.id}"
 }
 
 resource "github_team" "unbound" {

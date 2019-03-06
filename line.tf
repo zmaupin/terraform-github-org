@@ -1,11 +1,11 @@
 module "line" {
-  source         = "modules/repository"
-  name           = "line"
-  description    = "Development repository for the line cookbook"
-  homepage_url   = "https://supermarket.chef.io/cookbooks/line"
-  cookbook_team  = "${github_team.line.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
-  status_checks  = ["ci/circleci: lint"]
+  source        = "modules/repository"
+  name          = "line"
+  description   = "Development repository for the line cookbook"
+  homepage_url  = "https://supermarket.chef.io/cookbooks/line"
+  cookbook_team = "${github_team.line.id}"
+
+  status_checks = ["ci/circleci: lint"]
 }
 
 resource "github_team" "line" {
@@ -17,12 +17,6 @@ resource "github_team" "line" {
 resource "github_team_membership" "line-maintainer-1" {
   team_id  = "${github_team.line.id}"
   username = "damacus"
-  role     = "maintainer"
-}
-
-resource "github_team_membership" "line-maintainer-2" {
-  team_id  = "${github_team.line.id}"
-  username = "someara"
   role     = "maintainer"
 }
 

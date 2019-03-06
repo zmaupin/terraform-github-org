@@ -1,8 +1,7 @@
 module "reprepro" {
-  source         = "modules/repository"
-  name           = "reprepro"
-  cookbook_team  = "${github_team.reprepro.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "reprepro"
+  cookbook_team = "${github_team.reprepro.id}"
 }
 
 resource "github_team" "reprepro" {

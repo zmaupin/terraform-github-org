@@ -1,8 +1,7 @@
 module "ruby_build" {
-  source         = "modules/repository"
-  name           = "ruby_build"
-  cookbook_team  = "${github_team.ruby_build.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "ruby_build"
+  cookbook_team = "${github_team.ruby_build.id}"
 }
 
 resource "github_team" "ruby_build" {

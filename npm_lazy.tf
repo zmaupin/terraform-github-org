@@ -1,8 +1,7 @@
 module "npm_lazy" {
-  source         = "modules/repository"
-  name           = "npm_lazy"
-  cookbook_team  = "${github_team.npm_lazy.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "npm_lazy"
+  cookbook_team = "${github_team.npm_lazy.id}"
 }
 
 resource "github_team" "npm_lazy" {

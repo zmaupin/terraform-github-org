@@ -1,9 +1,8 @@
 module "winrm" {
-  source         = "modules/repository"
-  name           = "winrm"
-  homepage_url   = "https://supermarket.chef.io/cookbooks/winrm"
-  cookbook_team  = "${github_team.winrm.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "winrm"
+  homepage_url  = "https://supermarket.chef.io/cookbooks/winrm"
+  cookbook_team = "${github_team.winrm.id}"
 }
 
 resource "github_team" "winrm" {

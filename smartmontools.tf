@@ -1,8 +1,7 @@
 module "smartmontools" {
-  source         = "modules/repository"
-  name           = "smartmontools"
-  cookbook_team  = "${github_team.smartmontools.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "smartmontools"
+  cookbook_team = "${github_team.smartmontools.id}"
 }
 
 resource "github_team" "smartmontools" {

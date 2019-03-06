@@ -1,8 +1,7 @@
 module "dhcp" {
-  source         = "modules/repository"
-  name           = "dhcp"
-  cookbook_team  = "${github_team.dhcp.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "dhcp"
+  cookbook_team = "${github_team.dhcp.id}"
 }
 
 resource "github_team" "dhcp" {

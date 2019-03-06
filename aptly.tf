@@ -1,8 +1,7 @@
 module "aptly" {
-  source         = "modules/repository"
-  name           = "aptly"
-  cookbook_team  = "${github_team.aptly.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "aptly"
+  cookbook_team = "${github_team.aptly.id}"
 }
 
 resource "github_team" "aptly" {

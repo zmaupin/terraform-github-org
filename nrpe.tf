@@ -1,9 +1,8 @@
 module "nrpe" {
-  source         = "modules/repository"
-  name           = "nrpe"
-  description    = "Chef cookbook to install Nagios NRPE client"
-  cookbook_team  = "${github_team.nrpe.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "nrpe"
+  description   = "Chef cookbook to install Nagios NRPE client"
+  cookbook_team = "${github_team.nrpe.id}"
 }
 
 resource "github_team" "nrpe" {

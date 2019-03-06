@@ -1,8 +1,7 @@
 module "zabbix-agent" {
-  source         = "modules/repository"
-  name           = "zabbix-agent"
-  cookbook_team  = "${github_team.zabbix-agent.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "zabbix-agent"
+  cookbook_team = "${github_team.zabbix-agent.id}"
 }
 
 resource "github_team" "zabbix-agent" {

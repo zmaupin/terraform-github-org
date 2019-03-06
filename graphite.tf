@@ -2,7 +2,6 @@ module "graphite" {
   source                     = "modules/repository"
   name                       = "graphite"
   cookbook_team              = "${github_team.graphite.id}"
-  chef_de_partie             = "${github_team.Chef_de_partie.id}"
   enforce_admins             = true
   require_code_owner_reviews = true
 }

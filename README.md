@@ -1,6 +1,6 @@
 # terraform-github-org
 [![Backers on Open Collective](https://opencollective.com/sous-chefs/backers/badge.svg)](#backers)
- [![Sponsors on Open Collective](https://opencollective.com/sous-chefs/sponsors/badge.svg)](#sponsors) 
+ [![Sponsors on Open Collective](https://opencollective.com/sous-chefs/sponsors/badge.svg)](#sponsors)
 
 For managing the Sous Chefs Github Organisation
 
@@ -22,7 +22,7 @@ module "bsdcpio" {
   name           = "bsdcpio"
   description    = "Development repository for the bsdcpio cookbook"
   cookbook_team  = "${github_team.bsdcpio.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+
 }
 
 resource "github_team" "bsdcpio" {
@@ -51,7 +51,7 @@ All terraform resource names must be unique. The easiest way to do this is
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. 
+This project exists thanks to all the people who contribute.
 <img src="https://opencollective.com/sous-chefs/contributors.svg?width=890&button=false" /></a>
 
 

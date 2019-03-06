@@ -1,9 +1,8 @@
 module "mysql" {
-  source         = "modules/repository"
-  name           = "mysql"
-  description    = "Sous Chefs MySQL Cookbook"
-  cookbook_team  = "${github_team.mysql.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
+  source        = "modules/repository"
+  name          = "mysql"
+  description   = "Sous Chefs MySQL Cookbook"
+  cookbook_team = "${github_team.mysql.id}"
 }
 
 resource "github_team" "mysql" {

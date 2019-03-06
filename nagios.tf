@@ -1,9 +1,9 @@
 module "nagios" {
-  source         = "modules/repository"
-  name           = "nagios"
-  cookbook_team  = "${github_team.nagios.id}"
-  chef_de_partie = "${github_team.Chef_de_partie.id}"
-  has_wiki       = true
+  source        = "modules/repository"
+  name          = "nagios"
+  cookbook_team = "${github_team.nagios.id}"
+
+  has_wiki = true
 }
 
 resource "github_team" "nagios" {
