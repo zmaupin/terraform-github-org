@@ -1,8 +1,11 @@
 module "rundeck" {
-  source        = "modules/repository"
-  name          = "rundeck"
-  description   = "Development repository for the Rundeck cookbook"
-  cookbook_team = "${github_team.rundeck.id}"
+  source                     = "modules/repository"
+  name                       = "rundeck"
+  description                = "Development repository for the Rundeck cookbook"
+  cookbook_team              = "${github_team.rundeck.id}"
+  enforce_admins             = true
+  require_code_owner_reviews = true
+  status_checks              = ["ci/circleci: delivery", "ci/circleci: lint-markdown", "ci/circleci: lint-yaml"]
 }
 
 resource "github_team" "rundeck" {
